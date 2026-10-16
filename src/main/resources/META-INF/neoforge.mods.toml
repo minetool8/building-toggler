@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "MIT"
+
+[[mods]]
+modId = "globalbuildingtoggle"
+version = "1.0.0"
+displayName = "Global Building Toggle"
+authors = "You"
+description = '''
+Server-side global block placement toggle. /building off stops regular players from placing blocks;
+OPs can still build. Breaking blocks and using workstations/containers is unaffected.
+Install on the SERVER only.
+'''
+
+[[dependencies.globalbuildingtoggle]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.257,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.globalbuildingtoggle]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
